@@ -121,7 +121,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		color: #ffffff;
+		color: #888;
 		text-decoration: none;
 	}
 
@@ -2531,7 +2531,7 @@ input, select, textarea {
 		background-color: #989898;
 		border-radius: 5px;
 		border: 0;
-		color: #ffffff !important;
+		color: #E5E5E5 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 700;
