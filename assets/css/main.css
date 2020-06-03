@@ -2414,7 +2414,7 @@ input, select, textarea {
 			ul.feature-icons li:before {
 				background: #934A5F;
 				border-radius: 100%;
-				color: #ffffff;
+				color: #888;
 				display: block;
 				height: 2.5em;
 				left: 0;
@@ -2548,7 +2548,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		.button:hover {
 			background-color: #E5E5E5;
-			color: #ffffff !important;
+			color: #888!important;
 		}
 
 		input[type="submit"]:active,
