@@ -3,6 +3,10 @@
     "school": [
       {"title":"My Home","path":"images/Map1_Home.pdf"},
       {"title":"Bus Stops","path":"images/Map2_Bus.pdf"}
-    ]
+    ],
+    "professional": [
+      {"title":"My Home","path":"images/Map1_Home.pdf"},
+      {"title":"Bus Stops","path":"images/Map2_Bus.pdf"}
+    ],
   }
 }
