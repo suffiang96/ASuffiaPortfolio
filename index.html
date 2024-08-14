@@ -105,7 +105,7 @@ https://html5up.net/read-only  for the HTML template for this website
 				<section id="twofive">
 					<style>
 					/* Style the button that is used to open and close the collapsible content */
-					.collapsible {
+					.collapsiblePanel {
 					  background-color: #eee;
 					  color: #444;
 					  cursor: pointer;
@@ -118,7 +118,7 @@ https://html5up.net/read-only  for the HTML template for this website
 					}
 
 					/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-					.active, .collapsible:hover {
+					.active, .collapsiblePanel:hover {
 					  background-color: #ccc;
 					}
 
@@ -130,94 +130,123 @@ https://html5up.net/read-only  for the HTML template for this website
 					  background-color: #f1f1f1;
 					}
 					</style>
-					<script>
-					var coll = document.getElementsByClassName("collapsible");
-					var i;
 
-					for (i = 0; i < coll.length; i++) {
-					  coll[i].addEventListener("click", function() {
-					    this.classList.toggle("active");
-					    var content = this.nextElementSibling;
-					    if (content.style.display === "block") {
-					      content.style.display = "none";
-					    } else {
-					      content.style.display = "block";
-					    }
-					  });
-					}
-					</script>
 				   <div class="container">
-						 <h3> Recent work </h3>
-						 <p> Some of the cartography and web products produced in the MSGT program at UW Tacoma.
-						 <br>Click the image to view, print, or download a .pdf version. </p>
-						 <br>
-						 <h4> Cartography </h4>
-  									<div class="features">
-  										<article>
-  											<a href="images/TerrainMapping.pdf" target="_blank" class="image"><img src="images/TerrainMapping.jpg" alt="Terrain map of Upper Green River Watershed."/></a>
-  											<div class="inner">
-  												<b><p> Terrain of the Upper Green River Watershed</b><br>
-  											  For this visual I made a custom hillshade from a LiDAR derived DEM. Then I symbolized the DEM by elevation value and draped it over the hillshade layer with a slight transparency. Finally, 500 meter contours as well as water body and rail roads were added for reference. </p>
-  											</div>
-  										</article>
-											<article>
-												<a href="images/Covid19Layout.pdf" target="_blank" class="image"><img src="images/Covid19Layout.jpg" alt="Covid-19 data on a chropleth map for April 2020."/></a>
-												<div class="inner">
-													<p> <b> COVID-19 Cases in the United States </b><br>
-													This choropleth map diplays confirmed COVID-19 cases as of 4/13/2020 normalized by state population. Data was classified using natural breaks and symbolized with graduated colors to show states with greater proportions of cases. </p>
-												</div>
-											</article>
-											<article>
-												<a href="images/HexMap.pdf" target="_blank" class="image"><img src="images/HexMap.jpg" alt="Hex tesselation to represent petrol facilities."/></a>
-												<div class="inner">
-													<p><b> Hexbin Mapping of Petrol Facilities </b><br>
-												  Each Hexbin tile was created to be 2500 square miles using ArcPro's Generate Tesselation Tool and the point data for petrol facilities was joined to the hexbin layer. Hexagons were symbolized using graduated colors to indicate areas with more facilities than others.  </p>
-												</div>
-											</article>
-											<article>
-												<a href="images/EduIndexFinal.jpg" target="_blank" class="image"><img src="images/EduIndexFinal.jpg" alt="Education opportunity index for King County, Washington."/></a>
-												<div class="inner">
-													<p><b>King County Education Opportunity Index</b><br>
-													This educational opportunity index for King County, Wasington was created using the 'z-score' method. Indicators for opportunity used in this index include, reading test scores, math test scores, student poverty, teacher qualifications, and graduation rates. </p>
-												</div>
-											</article>
-											<article>
-												<a href="images/PugetSound.pdf" target="_blank" class="image"><img src="images/PugetSound.jpg" alt="Points of interest map for Puget Sound, Washington"/></a>
-												<div class="inner">
-													<p><b> Points of Interest, Puget Sound </b><br>
-													Layers were carefully labeled using varying text colors, sizes, and fonts to create visual hierachy for easy reading.  </p>
-												</div>
-											</article>
-<article>
 
-	<button type="button" class="collapsible">Open Collapsible</button>
+
+
+	<button type="button" class="collapsiblePanel"><h3>Web Mapping</h3></button>
 	<div class="content">
+		<div class="features">
+			<p> Some of my previous web based develoment projects.
 
+								<br>
+								<h4>	<a href="https://matterhornwab.co.pierce.wa.us/publicgis/" target="_blank"> PublicGIS </a> </h4>
 
+							<p>	<i> PublicGIS was the first large custom application I helped develop using Expereince Builder Developer Edition. During my first year as a GIS Programmer for Pierce County, Washington I contributed greatly to the application's overall UI/UX design and custom widget development. </i></p>
+
+								<h4>	<a href="https://piercecowa.maps.arcgis.com/apps/instant/nearby/index.html?appid=0cdc8ec3db2b4869afd414d13fcc5d01" target="_blank"> Pierce County Park Finder </a> </h4>
+
+							<p>	<i> The Park Finder app was built using the ArcGIS Instant Apps, specifically the Nearby template. This project involved multi-department collaboration and custom popups configured using ArcGIS Arcade espressions. </i></p>
+
+								<h4>	<a href="https://experience.arcgis.com/experience/eaff331633c54e53a237798fd9bba8e1/page/Home/" target="_blank"> Comanche County Tornado History</a> </h4>
+
+							<p>	<i> This was the first Experience Builder application that I created during my time as a GIS Analyst for the City of Lawton, Oklahoma. This application won Best Web Experience at Oklahoma South Central Arc Users Group Conference in 2022. The accompanying poster won Best Poster the same year. </i></p>
+
+							<p>
+								The following web based applications were created during my time in the UW Tacoma MSc program.
+							</p>
+										<h4><a href="https://suffiang96.github.io/Lab3/" target="_blank"> Fault map for Seattle, Washington</a></h4>
+
+										<h4><a href="https://suffiang96.github.io/Lab4/" target="_blank"> Real-time earthquake map</a></h4>
+
+										<h4><a href="https://suffiang96.github.io/Lab5/" target="_blank"> Salmon distribution map</a></h4>
+
+										<h4><a href="https://suffiang96.github.io/WayfindingMap/" target="_blank"> Interactive wayfinding map</a></h4>
+
+										<h4><a href="https://suffiang96.github.io/FirstMobileMap/" target="_blank"> Web map made for use on a mobile phone or tablet</a></h4>
+
+										<h4><a href="https://suffiang96.github.io/SalmonCharts/" target="_blank"> Interactive charts</a></h4>
+
+										<h4><a href="https://suffiang96.github.io/ChartPractice/" target="_blank"> Interactive charts</a></h4>
 								<br>
-								<h4>Web Mapping</h4>
-								<br>
-										<a href="https://suffiang96.github.io/Lab3/" target="_blank"> Fault map for Seattle, Washington</a>
-  							<br>
-								<br>
-										<a href="https://suffiang96.github.io/Lab4/" target="_blank"> Real-time earthquake map</a>
-  							<br>
-								<br>
-										<a href="https://suffiang96.github.io/Lab5/" target="_blank"> Salmon distribution map</a>
-  							<br>
-								<br>
-										<a href="https://suffiang96.github.io/WayfindingMap/" target="_blank"> Interactive wayfinding map</a>
-  							<br>
-								<br>
-										<a href="https://suffiang96.github.io/FirstMobileMap/" target="_blank"> Web map made for use on a mobile phone or tablet</a>
-								<br>
-								<br>
-										<a href="https://suffiang96.github.io/SalmonCharts/" target="_blank"> Interactive charts</a>
-								<br>
-								<br>
-										<a href="https://suffiang96.github.io/ChartPractice/" target="_blank"> Interactive charts</a>
-								<br>
-								</div>
+			</div>
+</div>
+
+<div>
+	<button type="button" class="collapsiblePanel"> <h3> Cartography </h3></button>
+	<div class="content">
+		<p> Some of my previous cartography work.
+		<br>Click the image to view, print, or download a .pdf version. </p>
+				 <div class="features">
+					 <article>
+						 <a href="images/ETP_VisitorsMap.pdf" target="_blank" class="image"><img src="images/ETP_VisitorsMap.pdf" alt="Terrain map of Upper Green River Watershed."/></a>
+						 <div class="inner">
+							 <b><p> Trails Fest </b><br>
+							 This park map was made in preparation for South Western Oklahoma (SWOK) Trails Fest 2022.</p>
+						 </div>
+					 </article>
+					 <article>
+						 <a href="images/TrailsFest2022.pdf" target="_blank" class="image"><img src="iimages/TrailsFest2022.pdf" alt="Terrain map of Upper Green River Watershed."/></a>
+						 <div class="inner">
+							 <b><p> Trails Fest </b><br>
+							 This park map was made in preparation for South Western Oklahoma (SWOK) Trails Fest 2022.</p>
+						 </div>
+					 </article>
+					 <article>
+						 <a href="images/TerrainMapping.pdf" target="_blank" class="image"><img src="images/TerrainMapping.jpg" alt="Terrain map of Upper Green River Watershed."/></a>
+						 <div class="inner">
+							 <b><p> Terrain of the Upper Green River Watershed</b><br>
+							 For this visual I made a custom hillshade from a LiDAR derived DEM. Then I symbolized the DEM by elevation value and draped it over the hillshade layer with a slight transparency. Finally, 500 meter contours as well as water body and rail roads were added for reference. </p>
+						 </div>
+					 </article>
+					 <article>
+						 <a href="images/Covid19Layout.pdf" target="_blank" class="image"><img src="images/Covid19Layout.jpg" alt="Covid-19 data on a chropleth map for April 2020."/></a>
+						 <div class="inner">
+							 <p> <b> COVID-19 Cases in the United States </b><br>
+							 This choropleth map diplays confirmed COVID-19 cases as of 4/13/2020 normalized by state population. Data was classified using natural breaks and symbolized with graduated colors to show states with greater proportions of cases. </p>
+						 </div>
+					 </article>
+					 <article>
+						 <a href="images/HexMap.pdf" target="_blank" class="image"><img src="images/HexMap.jpg" alt="Hex tesselation to represent petrol facilities."/></a>
+						 <div class="inner">
+							 <p><b> Hexbin Mapping of Petrol Facilities </b><br>
+							 Each Hexbin tile was created to be 2500 square miles using ArcPro's Generate Tesselation Tool and the point data for petrol facilities was joined to the hexbin layer. Hexagons were symbolized using graduated colors to indicate areas with more facilities than others.  </p>
+						 </div>
+					 </article>
+					 <article>
+						 <a href="images/EduIndexFinal.jpg" target="_blank" class="image"><img src="images/EduIndexFinal.jpg" alt="Education opportunity index for King County, Washington."/></a>
+						 <div class="inner">
+							 <p><b>King County Education Opportunity Index</b><br>
+							 This educational opportunity index for King County, Wasington was created using the 'z-score' method. Indicators for opportunity used in this index include, reading test scores, math test scores, student poverty, teacher qualifications, and graduation rates. </p>
+						 </div>
+					 </article>
+					 <article>
+						 <a href="images/PugetSound.pdf" target="_blank" class="image"><img src="images/PugetSound.jpg" alt="Points of interest map for Puget Sound, Washington"/></a>
+						 <div class="inner">
+							 <p><b> Points of Interest, Puget Sound </b><br>
+							 Layers were carefully labeled using varying text colors, sizes, and fonts to create visual hierachy for easy reading.  </p>
+						 </div>
+					 </article>
+				 </div>
+<article>
+</div>
+			<script>
+			var coll = document.getElementsByClassName("collapsiblePanel");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.display === "block") {
+						content.style.display = "none";
+					} else {
+						content.style.display = "block";
+					}
+				});
+			}
+			</script>
 
 			 </section>
 
