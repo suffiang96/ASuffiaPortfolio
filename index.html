@@ -300,7 +300,7 @@ https://html5up.net/read-only  for the HTML template for this website
 
 							<div class="mySlides fade">
 							  <div class="numbertext">2 / 6</div>
-								<a href="images/Map2_Bus.pdf" target="_blank" class="image"><img src="images/Map2_Bus.png" style="max-width: 600px; max-height: 400px;"alt="A map of bus routes and flood hazard."/></a>
+								<a href="" target="_blank" class="image"><img src="images/Map2_Bus.png" style="max-width: 600px; max-height: 400px;"alt="A map of bus routes and flood hazard."/></a>
 							  <div class="text">Flooding hazards on Pierce Transit routes </div>
 							</div>
 
@@ -346,32 +346,6 @@ https://html5up.net/read-only  for the HTML template for this website
 							</div>
 
 							<script>
-							var slideIndex = 1;
-							showSlides(slideIndex);
-
-							function plusSlides(n) {
-							  showSlides(slideIndex += n);
-							}
-
-							function currentSlide(n) {
-							  showSlides(slideIndex = n);
-							}
-
-							function showSlides(n) {
-							  var i;
-							  var slides = document.getElementsByClassName("mySlides");
-							  var dots = document.getElementsByClassName("dot");
-							  if (n > slides.length) {slideIndex = 1}
-							  if (n < 1) {slideIndex = slides.length}
-							  for (i = 0; i < slides.length; i++) {
-							      slides[i].style.display = "none";
-							  }
-							  for (i = 0; i < dots.length; i++) {
-							      dots[i].className = dots[i].className.replace(" active", "");
-							  }
-							  slides[slideIndex-1].style.display = "block";
-							  dots[slideIndex-1].className += " active";
-							}
 
 							let fetchRes = fetch(
 	"https://suffiang96.github.io/ASuffiaPortfolio/products.json");
@@ -382,8 +356,14 @@ https://html5up.net/read-only  for the HTML template for this website
 	    res.json()).then(d => {
 	        console.log(d)
 	    })
+let edu = d.professional
+console.log(edu)
 
+			for (let i = 0; i < edu.length; i++) {
 
+			  text += cars[i] + "<br>";
+
+			}
 
 
 							</script>
